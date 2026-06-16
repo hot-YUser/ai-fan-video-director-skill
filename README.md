@@ -20,19 +20,19 @@ skills/ai-fan-video-director/SKILL.md
 
 ## 安裝方式
 
-發佈到 GitHub 後，請把 `yourname` 換成你的 GitHub 帳號或組織名稱：
+GitHub 發佈版：
 
 ```bash
-npx skills@latest add yourname/ai-fan-video-skill --skill ai-fan-video-director
+npx skills@latest add hot-YUser/ai-fan-video-director-skill --skill ai-fan-video-director
 ```
 
 指定安裝到常見 Agent：
 
 ```bash
-npx skills@latest add yourname/ai-fan-video-skill --skill ai-fan-video-director -a codex
-npx skills@latest add yourname/ai-fan-video-skill --skill ai-fan-video-director -a claude-code
-npx skills@latest add yourname/ai-fan-video-skill --skill ai-fan-video-director -a cursor
-npx skills@latest add yourname/ai-fan-video-skill --skill ai-fan-video-director -a opencode
+npx skills@latest add hot-YUser/ai-fan-video-director-skill --skill ai-fan-video-director -a codex
+npx skills@latest add hot-YUser/ai-fan-video-director-skill --skill ai-fan-video-director -a claude-code
+npx skills@latest add hot-YUser/ai-fan-video-director-skill --skill ai-fan-video-director -a cursor
+npx skills@latest add hot-YUser/ai-fan-video-director-skill --skill ai-fan-video-director -a opencode
 ```
 
 本機測試：
@@ -44,7 +44,7 @@ npx skills@latest add ./ai-fan-video-skill --skill ai-fan-video-director
 Codex 也可以透過內建 `$skill-installer` 安裝：
 
 ```text
-$skill-installer install https://github.com/yourname/ai-fan-video-skill/tree/main/skills/ai-fan-video-director
+$skill-installer install https://github.com/hot-YUser/ai-fan-video-director-skill/tree/main/skills/ai-fan-video-director
 ```
 
 ## Skill 內容
@@ -68,7 +68,7 @@ $skill-installer install https://github.com/yourname/ai-fan-video-skill/tree/mai
 初始化後可用：
 
 ```bash
-git remote add origin https://github.com/yourname/ai-fan-video-skill.git
+git remote add origin https://github.com/hot-YUser/ai-fan-video-director-skill.git
 git push -u origin main
 git push origin v1.0.0
 ```
@@ -76,7 +76,7 @@ git push origin v1.0.0
 如果要用 GitHub CLI 建立 repo：
 
 ```bash
-gh repo create yourname/ai-fan-video-skill --public --source . --remote origin --push
+gh repo create hot-YUser/ai-fan-video-director-skill --public --source . --remote origin --push
 git push origin v1.0.0
 ```
 
@@ -85,4 +85,4 @@ git push origin v1.0.0
 - Skill 內容使用繁體中文。
 - 影片生成提示詞跟隨使用者輸入語言。
 - 不內建 scripts，這是純文字引導與提示詞製作型 Skill。
-- 發佈前請把 README 裡的 `yourname` 換成你的 GitHub 帳號或組織名稱。
+- 目前預設發佈位置為 `hot-YUser/ai-fan-video-director-skill`。
