@@ -16,7 +16,22 @@ skills/ai-fan-video-director/SKILL.md
 - Claude Code
 - Cursor
 - OpenCode
+- Antigravity 2.0
+- OpenClaw
+- Hermes Agent
 - 其他支援 Agent Skills 標準或 `npx skills` 的 Agent
+
+常用 Agent 對應：
+
+| Agent | `npx skills` 目標 | 專案內原生路徑 | 全域原生路徑 |
+|---|---|---|---|
+| Codex | `codex` | `.agents/skills/` | `~/.codex/skills/` |
+| Claude Code | `claude-code` | `.claude/skills/` | `~/.claude/skills/` |
+| Cursor | `cursor` | `.agents/skills/` | `~/.cursor/skills/` |
+| OpenCode | `opencode` | `.agents/skills/` | `~/.config/opencode/skills/` |
+| Antigravity 2.0 | `antigravity` | `.agents/skills/` | `~/.gemini/antigravity/skills/` |
+| OpenClaw | `openclaw` | `skills/` | `~/.openclaw/skills/` |
+| Hermes Agent | `hermes-agent` | `.hermes/skills/` | `~/.hermes/skills/` |
 
 ## 安裝方式
 
@@ -33,6 +48,15 @@ npx skills@latest add hot-YUser/ai-fan-video-director-skill --skill ai-fan-video
 npx skills@latest add hot-YUser/ai-fan-video-director-skill --skill ai-fan-video-director -a claude-code
 npx skills@latest add hot-YUser/ai-fan-video-director-skill --skill ai-fan-video-director -a cursor
 npx skills@latest add hot-YUser/ai-fan-video-director-skill --skill ai-fan-video-director -a opencode
+npx skills@latest add hot-YUser/ai-fan-video-director-skill --skill ai-fan-video-director -a antigravity
+npx skills@latest add hot-YUser/ai-fan-video-director-skill --skill ai-fan-video-director -a openclaw
+npx skills@latest add hot-YUser/ai-fan-video-director-skill --skill ai-fan-video-director -a hermes-agent
+```
+
+一次安裝到 Antigravity 2.0、OpenClaw、Hermes Agent：
+
+```bash
+npx skills@latest add hot-YUser/ai-fan-video-director-skill --skill ai-fan-video-director -a antigravity -a openclaw -a hermes-agent
 ```
 
 本機測試：
